@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './navbar/Navbar'
+import Podcat from './podcat/Podcat'
+import Embrace from './embrace/Embrace'
+import Inspring from './inspring/Inspring'
+import Card from './card/Card'
+import VideoCompound from './videocompound/VideoCompound'
+import Content from './content/Content'
+import Footer from './footer/Footer'
+import { Fade } from 'react-awesome-reveal'
+import UseRefPlayer from './useref/UseRefPlayer'
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Fade>
+     <Navbar/>
+      <Podcat/>
+      <Embrace/>
+      <Inspring/>
+      <Card/>
+      <VideoCompound/>
+      <Content/>
+      <Footer/>
+     </Fade>
+     <UseRefPlayer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
